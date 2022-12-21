@@ -9,5 +9,8 @@ class arcticalFlags extends Model
 {
     use HasFactory;
     protected $fillable = ['title','arctical_id'];
-
+    public function arctical()
+    {
+        return $this->belongsTo('App\Models\arctical', 'arctical_id');
+    }
 }
