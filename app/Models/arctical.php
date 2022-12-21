@@ -8,4 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class arctical extends Model
 {
     use HasFactory;
+    protected $fillable = ['title', 'description','image','created_by','status'];
 }
