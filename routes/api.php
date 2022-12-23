@@ -16,8 +16,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
-    
-    
+
 });
 Route::post('/user-profile', [\App\Http\Controllers\Api\GovernoratesController::class, 'index']);
 Route::post('/user-profile', [\App\Http\Controllers\Api\GovernoratesController::class, 'show']);
